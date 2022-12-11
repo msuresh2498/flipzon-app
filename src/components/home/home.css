@@ -1,0 +1,13 @@
+.Home{
+    text-align: left;
+    padding: 50px;
+    background-image: url('https://img.freepik.com/premium-photo/attractive-woman-with-shop-bags-yellow-background_185193-69051.jpg?w=2000');
+    height: 100vh;
+}
+.Hometext{
+    font-size: 150px;
+    font-weight: 800;
+}
+p{
+    font-size: 50px;
+}
