@@ -53,4 +53,32 @@ background-color: #e5b37a; /* Green */
 .cart-items-name {
     font-size: 25px;
     text-align: left;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Remove-button{
+    background-color: #e5b37a; /* Green */
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 10px;
+      font-weight: 500;
+    
+ }
+.Remove-button:hover{
+        background-color: rgb(233, 127, 75);
+        color: white;
+}
+.cart-items-price{
+    font-size: 20px;
+    color: rgb(58, 80, 242);
+    font-weight: 600;
 }

@@ -13,7 +13,6 @@ const Cards =({products,  handleAddProduct}) => {
                     <h5 className="card-title">{products.name}</h5>
                     <p className='"card-text"'>{products.price}/-₨</p>
                     <p className='cardrating'>{products.rating}⭐Rating</p>
-                    <p> home  </p>
                     <button href="" className="cardbutton" onClick={ () =>handleAddProduct(products)}>Add to Cart</button>
                 </div>
                 </div>

@@ -4,7 +4,7 @@ import  './home.css';
 const Home =() => {
     return (
         <div className="Home">
-          <div className='Hometext'><Link to="/card"> FlipZOn</Link></div>
+          <div className='Hometext'>FlipZOn</div>
           <p>Starting From 499/-Rs</p>
         </div>
     )
