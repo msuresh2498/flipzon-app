@@ -1,5 +1,5 @@
 import './card.css'
-import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
 
 const Cards =({products,  handleAddProduct}) => {
     return (
@@ -11,9 +11,9 @@ const Cards =({products,  handleAddProduct}) => {
                 <div className='card-body'>
                     
                     <h5 className="card-title">{products.name}</h5>
-                    <p className='"card-text"'>{products.price}/-₨</p>
+                    <p className='"card-text"'>{products.price}/<small>₨</small></p>
                     <p className='cardrating'>{products.rating}⭐Rating</p>
-                    <button href="" className="cardbutton" onClick={ () =>handleAddProduct(products)}>Add to Cart</button>
+                    <Button href="" className="cardbutton" variant='contained' onClick={ () =>handleAddProduct(products)}>Add to Cart</Button>
                 </div>
                 </div>
             ))

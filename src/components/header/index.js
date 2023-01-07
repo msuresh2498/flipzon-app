@@ -1,5 +1,6 @@
 import './header.css'
 import { Link } from 'react-router-dom';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Header =() => {
     return (
@@ -20,7 +21,7 @@ const Header =() => {
                     </li>
                 </ul>
                 </div>
-                <button className='cartbutton'><Link to="/Cart"> Add to Cart</Link></button>
+                <button className='cartbutton'><Link to="/Cart"> <ShoppingCartIcon />Cart</Link></button>
             </div>
             </nav>
         </div>

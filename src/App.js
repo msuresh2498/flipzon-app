@@ -4,6 +4,7 @@ import Home from './components/home';
 import Cards from './components/card'; 
 import Header from './components/header';
 import Cart from './components/cart';
+import Footer from './footer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 const ProductList = [
@@ -101,6 +102,7 @@ function App() {
       <Route path = "/card" element = {<Cards products={products} cartItems={cartItems} handleAddProduct={handleAddProduct} />} />
       <Route path = "/cart" element = {<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveproduct={handleRemoveproduct}/>} />
       </Routes>
+      <Footer />
     </div >
     </BrowserRouter>
   );

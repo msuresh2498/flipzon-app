@@ -1,4 +1,5 @@
 import './cart.css'
+import Button from '@mui/material/Button';
 
 
 const Cart = ({cartItems, handleRemoveproduct})=> {
@@ -20,8 +21,8 @@ const Cart = ({cartItems, handleRemoveproduct})=> {
                             {item.name} </div>
                             <div className='cart-items-price'>
                             {item.price}/-₨</div>
-                            <button className='buynow-button'>Buy now</button>
-                            <button className='Remove-button'onClick={()=> handleRemoveproduct(item)}>Remove Cart</button>
+                            <Button variant="contained" className='buynow-Bn'>Buy now</Button>
+                            <Button variant="contained" className='Remove-button'onClick={()=> handleRemoveproduct(item)}>Remove Cart</Button>
                         </div>
                         
                     ))}
