@@ -1,11 +1,12 @@
 import './header.css'
 import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Header =() => {
     return (
         <div className='header'>
-            <nav className="navbar navbar-expand-lg bg-light">
+            <Nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
                 <span className="navbar-head" href="#">FlipZOn</span>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,16 +15,16 @@ const Header =() => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#"><Link to="/">Home</Link></a>
+                    <Nav.Item className="nav-link active" aria-current="page" href="#"><Link to="/">Home</Link></Nav.Item>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#"><Link to="/card">Shop</Link></a>
+                    <Nav.Item className="nav-link active" aria-current="page" href="#"><Link to="/card">Shop</Link></Nav.Item>
                     </li>
                 </ul>
                 </div>
                 <button className='cartbutton'><Link to="/Cart"> <ShoppingCartIcon />Cart</Link></button>
             </div>
-            </nav>
+            </Nav>
         </div>
     )
 }
